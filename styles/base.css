@@ -124,6 +124,8 @@ h2 {
     width: 60%;
     margin-left: 3rem;
     font-weight: bold;
+    background-color: #fff;
+    color: #000;
 }
 
 .flag_pic {
