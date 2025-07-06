@@ -29,6 +29,8 @@ header {
     color: #fff;
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
+    padding: 1rem;
 }
 
 main {
@@ -100,7 +102,7 @@ main .skills {
     margin: 1rem;
 }
 
-h2 {
+h1, h2 {
     font-size: medium;
     font-weight: bold;
     background-color: #2d718d;
@@ -118,12 +120,13 @@ h2 {
     margin: 1rem;
 }
 
-h3 {
+.country_name {
     padding: 0.5rem;
     text-align: center;
     border-bottom: 1px solid #000;
     width: 60%;
     margin-left: 3rem;
+    font-weight: bold;
 }
 
 .flag_pic {
