@@ -38,6 +38,7 @@ footer {
   background: #2d718d;
   padding: 1rem;
   text-align: center;
+  color: #fff;
 }
 
 /* NAVIGATION CSS */
@@ -152,5 +153,5 @@ li {
 }
 
 .modified {
-    color:red;
+    color: #fff;
 }
