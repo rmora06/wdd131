@@ -14,7 +14,7 @@ header {
   /* margin: 1rem; */
 }
 
-header h2 {
+header h1 {
   color: #eee;
   margin: 0;
 }
@@ -23,7 +23,7 @@ main {
     margin: 1rem;
 }
 
-h1 {
+h2 {
     margin: 1rem;
     text-align: center;
 }

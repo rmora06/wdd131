@@ -11,7 +11,7 @@ const nav = document.querySelector('.navigation');
 menuButton.addEventListener('click', () => {
   nav.classList.toggle('open');
 
-  // Cambiar ícono entre ☰ y ❌
+    
   if (nav.classList.contains('open')) {
     menuButton.textContent = '❌';
   } else {
