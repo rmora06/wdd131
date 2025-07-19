@@ -66,6 +66,14 @@ table {
     text-align: right;
 }
 
+.other img {
+    display: none;
+}
+
+.weather::after {
+    content: " 🌦️";
+}
+
 footer {
   background: var(--primary-color);
   padding: 1rem;
