@@ -4,6 +4,7 @@
     max-width: 1000px;
     --primary-color: darkblue;
     --secondary-color: red;
+    --background-color: #fff;
     font-family: sans-serif, 'Roboto';
 }
  
