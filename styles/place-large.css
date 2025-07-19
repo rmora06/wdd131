@@ -3,6 +3,7 @@
     padding: 0;
     max-width: 1000px;
     --primary-color: darkblue;
+    --secondary-color: red;
     font-family: sans-serif, 'Roboto';
 }
  
@@ -21,7 +22,7 @@ h1 {
 
 picture img {
     padding-top: 1rem;
-    background-color: red;
+    background-color: var(--secondary-color);
     width: 100%;
     display: block;
 }
@@ -43,7 +44,7 @@ picture img {
 }
 
 h2 {
-    background-color: red;
+    background-color: var(--secondary-color);
     padding: 0.5rem;
 
 }
