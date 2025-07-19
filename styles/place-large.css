@@ -47,7 +47,7 @@ picture img {
 h2 {
     background-color: var(--secondary-color);
     padding: 0.5rem;
-
+    margin: 1rem 2rem 0 0;
 }
 
 table {
