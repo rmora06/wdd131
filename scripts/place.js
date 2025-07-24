@@ -19,7 +19,7 @@ document.getElementById("lastModified").textContent = lastModified;
   document.addEventListener("DOMContentLoaded", () => {
     let resultado;
 
-    if (temperatura <= 10 && viento > 4.8) {
+    if (temperatura <= 30 && viento > 4.8) {
       resultado = calcularWindChillCelsius(temperatura, viento);
     } else {
       resultado = "N/A";
