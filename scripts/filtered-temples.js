@@ -7,9 +7,11 @@ document.getElementById("lastModified").textContent = lastModified;
 
 const menuButton = document.getElementById('menu-toggle');
 const nav = document.querySelector('.navigation');
+const titulo = document.querySelector('h1');
 
 menuButton.addEventListener('click', () => {
   nav.classList.toggle('open');
+  titulo.classList.toggle('opened');
 
     
   if (nav.classList.contains('open')) {
@@ -114,6 +116,7 @@ oldsLink.addEventListener("click", () => {
   createTempleCard(filtered);
   nav.classList.remove('open');
   menuButton.textContent = '☰';
+  titulo.classList.remove('opened');
 });
 
 document.querySelector("#after2000").addEventListener("click", () => {
@@ -124,6 +127,7 @@ document.querySelector("#after2000").addEventListener("click", () => {
   createTempleCard(filtered);
   nav.classList.remove('open');
   menuButton.textContent = '☰';
+  titulo.classList.remove('opened');
 });
 
 const largeLink = document.querySelector("#large");
@@ -132,6 +136,7 @@ largeLink.addEventListener("click", () => {
   createTempleCard(filtered);
   nav.classList.remove('open');
   menuButton.textContent = '☰';
+  titulo.classList.remove('opened');
 });
 
 const smallLink = document.querySelector("#small");
@@ -140,6 +145,7 @@ smallLink.addEventListener("click", () => {
   createTempleCard(filtered);
   nav.classList.remove('open');
   menuButton.textContent = '☰';
+  titulo.classList.remove('opened');
 });
 
 const homeButton = document.querySelector("#home");
@@ -147,6 +153,7 @@ homeButton.addEventListener("click", () => {
   createTempleCard(temples);
   nav.classList.remove('open');
   menuButton.textContent = '☰';
+  titulo.classList.remove('opened');
 });
 
 function createTempleCard(filteredTemples) { 
