@@ -112,6 +112,8 @@ oldsLink.addEventListener("click", () => {
     return year < 1900;
   });
   createTempleCard(filtered);
+  nav.classList.remove('open');
+  menuButton.textContent = '☰';
 });
 
 document.querySelector("#after2000").addEventListener("click", () => {
@@ -120,23 +122,31 @@ document.querySelector("#after2000").addEventListener("click", () => {
     return year > 2000;
   });
   createTempleCard(filtered);
+  nav.classList.remove('open');
+  menuButton.textContent = '☰';
 });
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
   const filtered = temples.filter(temple => temple.area > 90000);
   createTempleCard(filtered);
+  nav.classList.remove('open');
+  menuButton.textContent = '☰';
 });
 
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
   const filtered = temples.filter(temple => temple.area < 10000);
   createTempleCard(filtered);
+  nav.classList.remove('open');
+  menuButton.textContent = '☰';
 });
 
 const homeButton = document.querySelector("#home");
 homeButton.addEventListener("click", () => {
   createTempleCard(temples);
+  nav.classList.remove('open');
+  menuButton.textContent = '☰';
 });
 
 function createTempleCard(filteredTemples) { 
