@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+
+}
+
+header {
+    color: #a50104;
+    margin: 1rem;
+}
+
+main {
+    color: #fcba04;
+    background-color: #250001;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main p {
+    margin: 1rem 0 1rem 0;
+}
+
+h3, h4 {
+    margin: 1rem 0 1rem 0;
+
+}
+
+footer {
+    color: #250001;
+    margin: 1rem;
+}
+
