@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Product Review Form | Robert Mora</title>
+    <meta name="description" content="WDD 131 | Document Object Model">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <meta name="author" content="Robert Mora">
+</head>
+<body>
+    <header>
+        <h1>Course Proposal Application</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="prf">
+            <fieldset>
+                <label for="product">Product Name
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product... &#9662;</option>
+                </select>
+                </label> 
+            </fieldset>
+
+            <fieldset>
+            <legend>Overall Rating</legend>
+                <label><input type="radio" id="onestar" name="rate" value="rating" required> &star;</label>
+                <label><input type="radio" id="twostar" name="rate" value="rating" required> &star; &star;</label>
+                <label><input type="radio" id="threestar" name="rate" value="rating" required> &star; &star; &star;</label>
+                <label><input type="radio" id="fourstar" name="rate" value="rating" required> &star; &star; &star; &star;</label>
+                <label><input type="radio" id="fivestar" name="rate" value="rating" required> &star; &star; &star; &star; &star;</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <label><input type="date" name="completeDate" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find usefull in the poroduct? <br>
+                    (Check all that apply)
+                </legend>
+                <label><input type="checkbox" id="durability" name="editing" value="yes">Durability</label>
+                <label><input type="checkbox" id="ease" name="code" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="process" value="yes">Performance</label>
+                <label><input type="checkbox" id="durability" name="client" value="yes">Durability</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Writen Review (optional)</legend>
+                <textarea id="review" name="review"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Name (optinal)</legend>
+                <input type="text" id="uname" name="uname">
+            </fieldset>
+
+            <input type="submit" value="Send Review">
+        </form>
+    </main>
+    <footer>
+        &copy; <span id="year"></span>😎Robert Mora😎 Dominican Republic<br>
+        Last Modification: <span class="modified" id="lastModified"></span>
+    </footer>
+</body>
+</html>
