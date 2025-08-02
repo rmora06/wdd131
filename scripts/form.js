@@ -34,10 +34,9 @@ const products = [
 
 const selectElement = document.getElementById('product');
 
-// Agregar las opciones al select
 products.forEach(product => {
   const option = document.createElement('option');
-  option.value = product.id;       // Establece el valor
-  option.textContent = product.name; // Texto visible
+  option.value = product.id;  
+  option.textContent = product.name;
   selectElement.appendChild(option);
 });

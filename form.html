@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <meta name="author" content="Robert Mora">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,18 +21,18 @@
             <fieldset>
                 <label for="product">Product Name
                 <select id="product" name="product" required>
-                    <option value="" disabled selected>Select a Product... &#9662;</option>
+                    <option value="" disabled selected>Select a Product...</option>
                 </select>
                 </label> 
             </fieldset>
 
             <fieldset>
             <legend>Overall Rating</legend>
-                <label><input type="radio" id="onestar" name="rate" value="rating" required> &star;</label>
-                <label><input type="radio" id="twostar" name="rate" value="rating" required> &star; &star;</label>
-                <label><input type="radio" id="threestar" name="rate" value="rating" required> &star; &star; &star;</label>
-                <label><input type="radio" id="fourstar" name="rate" value="rating" required> &star; &star; &star; &star;</label>
-                <label><input type="radio" id="fivestar" name="rate" value="rating" required> &star; &star; &star; &star; &star;</label>
+                <label><input type="radio" id="onestar" name="rate" value="1" required> &star;</label>
+                <label><input type="radio" id="twostar" name="rate" value="2" required> &star; &star;</label>
+                <label><input type="radio" id="threestar" name="rate" value="3" required> &star; &star; &star;</label>
+                <label><input type="radio" id="fourstar" name="rate" value="4" required> &star; &star; &star; &star;</label>
+                <label><input type="radio" id="fivestar" name="rate" value="5" required> &star; &star; &star; &star; &star;</label>
             </fieldset>
 
             <fieldset>
@@ -38,13 +41,13 @@
             </fieldset>
 
             <fieldset>
-                <legend>Which features did you find usefull in the poroduct? <br>
+                <legend>Which features did you find usefull in the product? <br>
                     (Check all that apply)
                 </legend>
                 <label><input type="checkbox" id="durability" name="editing" value="yes">Durability</label>
                 <label><input type="checkbox" id="ease" name="code" value="yes">Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="process" value="yes">Performance</label>
-                <label><input type="checkbox" id="durability" name="client" value="yes">Durability</label>
+                <label><input type="checkbox" id="design" name="client" value="yes">Design</label>
             </fieldset>
 
             <fieldset>
@@ -53,7 +56,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Your Name (optinal)</legend>
+                <legend>Your Name (optional)</legend>
                 <input type="text" id="uname" name="uname">
             </fieldset>
 
