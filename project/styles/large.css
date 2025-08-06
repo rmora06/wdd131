@@ -1,0 +1,234 @@
+:root {
+  --primary-color: #ba1412;
+  --secondary-color: #250001;
+  --accent-color: #fcba04;
+
+}
+
+ * {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #2d718d; */
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+header h1 {
+  color:var(--primary-color);
+}
+
+/* NAVIGATION CSS */
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.navigation a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.sub a {
+  background-color: var(--accent-color);
+}
+
+.navigation a:hover {
+	font-weight: 700;
+  background-color: #ccc;
+}
+
+
+/* HERO CSS */
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+/* GRID CSS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 100%;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+
+.grid h2 {
+  grid-column: 1/4;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* TABLE CSS */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4rem auto;
+}
+
+th, td {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+
+}
+
+th {
+  color: var(--primary-color);
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+/* FOOTER CSS  */
+
+footer {
+  margin: 2rem auto;
+  /* background-color: var(--secondary-color); */
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  background-color: var(--accent-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+footer a:hover {
+  background-color: #ccc;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+/* FORM CSS  */
+
+.subscribe-form {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.subscribe-form h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subscribe-form label {
+  font-weight: bold;
+}
+
+.subscribe-form input,
+.subscribe-form select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.subscribe-form button {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-form button:hover {
+  background-color: #ccc;
+  color: var(--primary-color);
+}
+
+.disabled {
+  background-color: gray !important;
+  color: white !important;
+  font-weight: bold;
+}

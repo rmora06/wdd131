@@ -1,0 +1,79 @@
+@media (max-width: 700px) {
+
+  body {
+  padding: 1rem;
+}
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid h2 {
+    grid-column: auto;
+    text-align: center;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #eee;
+  }
+
+  .navigation.open {
+    display: flex;
+  }
+
+  .navigation li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 1rem;
+  }
+
+  .subscribe-form {
+  padding: 1rem;
+  width: 100%;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subscribe-form input,
+.subscribe-form select,
+.subscribe-form button,
+.subscribe-form label,
+.subscribe-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.subscribe-form h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.disabled {
+  background-color: gray !important;
+  color: white !important;
+  font-weight: bold;
+}
+}

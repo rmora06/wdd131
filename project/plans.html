@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/momentum.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>MOMENTUM</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home" title="Home">Home</a></li>
+                <li><a href="plans.html" id="plans" title="Plans">Plans</a></li>
+                <li><a href="#" id="classes" title="Classes">Classes</a></li>
+                <li class="sub"><a href="#" id="subscribe" title="Subscribe">SUBSCRIBE NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>All Plans and Features</h1>
+        <table>
+  <thead>
+    <tr>
+      <th>PLANS</th>
+      <th>All Machines</th>
+      <th>All Classes</th>
+      <th>Monthly Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Momentum</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>$50</td>
+    </tr>
+    <tr>
+      <td>Momentum Plus</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>$75</td>
+    </tr>
+    <tr>
+      <td>Momentum Family</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Momentum Family Plus</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>$125</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PLANS</th>
+      <th>All Machines</th>
+      <th>All Classes</th>
+      <th>Weekly Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Momentum</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td>Momentum Plus</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>$20</td>
+    </tr>
+    <tr>
+      <td>Momentum Family</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>$30</td>
+    </tr>
+    <tr>
+      <td>Momentum Family Plus</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>$40</td>
+    </tr>
+  </tbody>
+</table>
+
+<section class="subscribe-form">
+  <h2>Subscribe to a Plan</h2>
+  <form id="subscribeForm" action="thankyou.html" method="get">                                             
+    <label for="plan">Select a Plan:</label>
+    <select id="plan" name="plan" required>
+      <option value="" disabled selected>Select a plan...</option>
+      <option value="Momentum">Momentum - $50/month</option>
+      <option value="Momentum Plus">Momentum Plus - $75/month</option>
+      <option value="Momentum Family">Momentum Family - $100/month</option>
+      <option value="Momentum Family Plus">Momentum Family Plus - $125/month</option>
+      <option value="Momentum">Momentum - $15/week</option>
+      <option value="Momentum Plus">Momentum Plus - $20/mweek</option>
+      <option value="Momentum Family">Momentum Family - $30/week</option>
+      <option value="Momentum Family Plus">Momentum Family Plus - $40/week</option>
+    </select>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="card">Credit Card Number:</label>
+    <input type="text" id="card" name="card" pattern="\d{16}" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+    <button type="submit">Subscribe Now</button>
+  </form>
+</section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
