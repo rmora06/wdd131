@@ -74,7 +74,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-  background-color: #0a9396;
+  background-color: #005f73;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -82,6 +82,7 @@ input[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 input[type="submit"]:hover {
