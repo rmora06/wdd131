@@ -76,4 +76,51 @@
   color: white !important;
   font-weight: bold;
 }
+
+.class-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card-header {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .card-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    padding: 0 0.8rem 1rem;
+  }
+
+  .info-item span {
+    font-size: 0.9rem;
+  }
+
+  .suggestion-box {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .suggestion-box input,
+  .suggestion-box textarea {
+    font-size: 0.95rem;
+  }
+
+  .suggestion-box button {
+    font-size: 0.95rem;
+  }
 }

@@ -23,17 +23,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (form) {
     form.addEventListener("submit", () => {
-      // Guardar en localStorage que ya se suscribió
       localStorage.setItem("isSubscribed", "true");
     });
   }
 
-  // Desactivar botón si ya se suscribió
+  // deactivate subscribe button
   const subscribeButton = document.querySelector('#subscribe');
+  const subsButton = document.querySelector('#subs');
   if (localStorage.getItem("isSubscribed") === "true" && subscribeButton) {
-    subscribeButton.textContent = "Suscrito";
+    subscribeButton.textContent = "Subscribed";
     subscribeButton.classList.add("disabled");
     subscribeButton.setAttribute("aria-disabled", "true");
     subscribeButton.style.pointerEvents = "none";
+
+    subsButton.textContent = "Subscribed";
+    subsButton.classList.add("disabled");
+    subsButton.setAttribute("aria-disabled", "true");
+    subsButton.style.pointerEvents = "none";
   }
 });
+
+document.getElementById("suggestionForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thanks for your suggestion!");
+  this.reset();
+   });

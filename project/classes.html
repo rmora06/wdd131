@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum/Classes</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/momentum.js" defer></script>
+    <meta name="author" content="Robert Mora">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>MOMENTUM</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home" title="Home">Home</a></li>
+                <li><a href="plans.html" id="plans" title="Plans">Plans</a></li>
+                <li><a href="classes.html" id="classes" title="Classes">Classes</a></li>
+                <li class="sub"><a href="plans.html"  id="subscribe" title="Subscribe">SUBSCRIBE NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>MOMENTUM CLASSES</h1>
+        <div class="class-cards">
+  <div class="card">
+    <img src="images/m-dance.webp" alt="Smart Dance">
+    <div class="card-header">MOMENTUM DANCE</div>
+    <div class="card-info">
+      <div class="info-item">
+        <img src="images/clock-icon.svg" alt="time">
+        <span>45 min</span>
+      </div>
+      <div class="info-item">
+        <img src="images/intensity-icon.svg" alt="Intensity">
+        <span>Mid</span>
+      </div>
+    </div>
+    <p>Burn calories while having fun with Zumba classes from our expert teachers with more than 5 years of experience</p>
+  </div>
+
+  <div class="card">
+    <img src="images/m-pilates.webp" alt="Momentum Pilates">
+    <div class="card-header">MOMENTUM PILATES</div>
+    <div class="card-info">
+      <div class="info-item">
+        <img src="images/clock-icon.svg" alt="time">
+        <span>60 min</span>
+      </div>
+      <div class="info-item">
+        <img src="images/intensity-icon.svg" alt="Intensity">
+        <span>Mid/High</span>
+      </div>
+    </div>
+    <p>Burn calories and gain flexibility by doing Pilates guided by certified teachers with years of experience</p>
+  </div>
+
+  <div class="card">
+    <img src="images/m-crossfit.webp" alt="Momentum Corssfit" loading="lazy">
+    <div class="card-header">MOMENTUM CROSSFIT</div>
+    <div class="card-info">
+      <div class="info-item">
+        <img src="images/clock-icon.svg" alt="time">
+        <span>90 min</span>
+      </div>
+      <div class="info-item">
+        <img src="images/intensity-icon.svg" alt="Intensity" loading="lazy">
+        <span>High</span>
+      </div>
+    </div>
+    <p>Gain strength and tone your muscles with CrossFit. One of the most comprehensive fitness disciplines</p>
+  </div>
+</div>
+
+<section class="suggestion-box">
+  <h2>Suggest a Class</h2>
+  <form id="suggestionForm">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="suggestion">Class Suggestion</label>
+    <textarea id="suggestion" name="suggestion" rows="5" required placeholder="Write your suggestion here... "></textarea>
+
+    <button type="submit">Suggest</button>
+  </form>
+</section>
+    </main>
+    
+</body>
+</html>
